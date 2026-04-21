@@ -31,8 +31,8 @@
             border-bottom: 8px solid var(--accent-yellow);
         }
 
-        .hero h1 { margin: 0; font-size: 2rem; }
-        .hero p { font-size: 1.2rem; margin: 10px 0; font-weight: bold; }
+        .hero h1 { margin: 0; font-size: 1.8rem; }
+        .hero p { font-size: 1.1rem; margin: 10px 0; font-weight: bold; }
 
         .cta-button, 
         .cta-button:visited, 
@@ -52,7 +52,6 @@
             width: 85%;
             max-width: 320px;
             text-align: center;
-            -webkit-appearance: none;
         }
 
         .reg-button, .reg-button:visited {
@@ -78,10 +77,9 @@
             border-radius: 12px;
             margin-bottom: 20px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            overflow: hidden; /* Keeps the map corners rounded */
         }
 
-        h2 { color: var(--primary-blue); margin-top: 0; border-bottom: 2px solid var(--accent-yellow); padding-bottom: 8px; }
+        h2 { color: var(--primary-blue); margin-top: 0; border-bottom: 2px solid var(--accent-yellow); padding-bottom: 8px; font-size: 1.4rem; }
 
         .direction-box {
             background: #f0f4f8;
@@ -91,59 +89,41 @@
             font-size: 0.95rem;
         }
 
-        /* Map Styling */
-        .map-container {
+        /* Map Section */
+        .map-wrapper {
             position: relative;
             width: 100%;
-            padding-bottom: 75%; /* Aspect ratio for the map */
-            height: 0;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #ddd;
             margin-bottom: 15px;
         }
 
-        .map-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .map-wrapper iframe {
             width: 100%;
             height: 100%;
             border: 0;
         }
 
-        .list-btn-container {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        .list-btn {
-            display: inline-block;
-            background-color: #f0f4f8;
-            color: var(--primary-blue);
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 0.9rem;
-            border: 1px solid var(--primary-blue);
-        }
-
         .address-grid {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 10px;
+            gap: 8px;
         }
 
         .address-item {
-            padding: 10px;
+            padding: 8px 12px;
             background: #fff;
-            border: 1px solid #ddd;
+            border: 1px solid #eee;
             border-radius: 6px;
-            font-weight: 500;
+            font-size: 0.95rem;
         }
 
         footer { 
             text-align: center; 
             padding: 40px 20px; 
-            font-size: 1rem; 
+            font-size: 0.9rem; 
             color: #444; 
             background: #eee;
         }
@@ -159,9 +139,9 @@
         <p>Taylor Village | Ellicott City, MD</p>
         <p>Saturday, May 2nd • 8AM - 2PM</p>
         
-        <a href="https://www.google.com/maps/dir/?api=1&destination=8270+Academy+Road+Ellicott+City+MD+21043" class="cta-button">📍 Start Navigating</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=8270+Academy+Road+Ellicott+City+MD" class="cta-button">📍 Start Navigating</a>
         <br>
-        <a href="https://forms.gle/DB52taH31219MR5k6" class="reg-button">Selling? Click here to register your house</a>
+        <a href="https://forms.gle/DB52taH31219MR5k6" class="reg-button">Selling? Click here to register</a>
     </section>
 
     <div class="container">
@@ -169,20 +149,20 @@
         <div class="card">
             <h2>How to Get Here</h2>
             <div class="direction-box">
-                <strong>From Old Ellicott City (3 mins):</strong> Turn onto Mulligans Hill Lane, turn right on St Paul Street, and follow the curve to the left where it turns into College Avenue. Follow College Avenue until you see signs.
+                <strong>From Old Ellicott City (3 mins):</strong> Turn onto Mulligans Hill Lane, right on St Paul Street, and follow the curve left onto College Avenue. Follow signs to the sale.
             </div>
             <div class="direction-box">
-                <strong>From Montgomery Road (2 mins):</strong> Turn onto New Cut Road, then turn right on Hillsborough Road. Follow Hillsborough Road until you see signs for the community yard sale.
+                <strong>From Montgomery Road (2 mins):</strong> Turn on to New Cut Road, then right on Hillsborough Road. Follow until you see yard sale signs.
             </div>
         </div>
 
         <div class="card">
             <h2>Sale Map</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.246714081198!2d-76.80436852425026!3d39.21447037165787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c8206122555555%3A0x1234567890abcdef!2s8270%20Academy%20Rd%2C%20Ellicott%20City%2C%20MD%2021043!5e0!3m2!1sen!2sus!4v1713400000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3091.246473183533!2d-76.7997!3d39.2647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81fccd6d8b689%3A0x5eea09e565de9e8b!2s8270%20Academy%20Rd%2C%20Ellicott%20City%2C%20MD%2021043!5e0!3m2!1sen!2sus!4v1712345678901!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
             </div>
-            <div class="list-btn-container">
-                <a href="https://maps.app.goo.gl/Syjzedr1QAZXnqrr6?g_st=ac" class="list-btn" target="_blank">🗺️ View Full List on Google Maps</a>
+            <div style="text-align: center;">
+                <a href="https://maps.app.goo.gl/Syjzedr1QAZXnqrr6?g_st=ac" target="_blank" style="color: var(--primary-blue); font-weight: bold; font-size: 1rem;">🗺️ View Full List of Homes on Google Maps</a>
             </div>
         </div>
 
@@ -211,8 +191,8 @@
         <div class="card">
             <h2>Tips for Shoppers</h2>
             <ul>
-                <li>Cash is preferred, but some homes may accept Venmo/CashApp/Zelle.</li>
-                <li><strong>Be mindful of driving and parking; we are expecting a large turnout.</strong></li>
+                <li>Cash preferred (some take Venmo/CashApp/Zelle).</li>
+                <li>Please be mindful of neighbor's driveways and parking.</li>
             </ul>
         </div>
 
@@ -220,10 +200,10 @@
 
     <footer>
         <div class="footer-line">
-            Follow us on Instagram: <a href="https://instagram.com/tvys.ec" target="_blank">@tvys.ec</a>
+            Instagram: <a href="https://instagram.com/tvys.ec" target="_blank">@tvys.ec</a>
         </div>
         <div class="footer-line">
-            Any questions? Email: <a href="mailto:taylorvillageyardsale@gmail.com">taylorvillageyardsale@gmail.com</a>
+            Email: <a href="mailto:taylorvillageyardsale@gmail.com">taylorvillageyardsale@gmail.com</a>
         </div>
         <div style="margin-top:20px; font-size: 0.8rem; opacity: 0.7;">
             Taylor Village Community Yard Sale • 2026
