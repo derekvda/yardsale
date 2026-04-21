@@ -6,14 +6,14 @@
     <title>Taylor Village Community Yard Sale</title>
     <style>
         :root {
-            --primary-blue: #0056b3;
+            --primary-blue: #003366;
             --accent-yellow: #ffd700;
             --text-dark: #222;
-            --bg-light: #f4f4f9;
+            --bg-light: #f9f9f9;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
@@ -21,7 +21,6 @@
             color: var(--text-dark);
         }
 
-        /* Hero Section */
         .hero {
             background-color: var(--primary-blue);
             color: white;
@@ -30,24 +29,24 @@
             border-bottom: 8px solid var(--accent-yellow);
         }
 
-        .hero h1 { margin: 0; font-size: 2.2rem; line-height: 1.2; }
+        .hero h1 { margin: 0; font-size: 2rem; }
         .hero p { font-size: 1.2rem; margin: 10px 0; font-weight: bold; }
 
-        /* Quick Action Button */
+        /* Updated Button: Dark Blue text on Yellow background */
         .cta-button {
             display: inline-block;
             background-color: var(--accent-yellow);
-            color: #000;
-            padding: 15px 25px;
+            color: var(--primary-blue); /* Dark Blue Text */
+            padding: 18px 30px;
             text-decoration: none;
             border-radius: 50px;
-            font-weight: bold;
-            font-size: 1.1rem;
+            font-weight: 800;
+            font-size: 1.2rem;
             margin-top: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-transform: uppercase;
         }
 
-        /* Content Sections */
         .container {
             max-width: 600px;
             margin: auto;
@@ -59,28 +58,33 @@
             padding: 20px;
             border-radius: 12px;
             margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        h2 { color: var(--primary-blue); margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        h2 { color: var(--primary-blue); margin-top: 0; border-bottom: 2px solid var(--accent-yellow); padding-bottom: 8px; }
 
-        /* Address List */
-        .address-item {
-            padding: 10px 0;
-            border-bottom: 1px solid #eee;
-        }
-        .address-item:last-child { border-bottom: none; }
-        .address-item strong { display: block; font-size: 1.1rem; color: #d32f2f; }
-
-        /* Directions */
         .direction-box {
-            background: #e9ecef;
+            background: #f0f4f8;
             padding: 15px;
             border-left: 5px solid var(--primary-blue);
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #666; }
+        .address-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .address-item {
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+
+        footer { text-align: center; padding: 30px; font-size: 0.9rem; color: #666; }
     </style>
 </head>
 <body>
@@ -89,7 +93,7 @@
         <h1>HUGE Community Yard Sale</h1>
         <p>Taylor Village | Ellicott City, MD</p>
         <p>Saturday, May 2nd • 8AM - 2PM</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Taylor+Village+Ellicott+City+MD" class="cta-button">📍 Tap for GPS Directions</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=8270+Academy+Road+Ellicott+City+MD+21043" class="cta-button">📍 Start Navigating Here</a>
     </section>
 
     <div class="container">
@@ -97,42 +101,47 @@
         <div class="card">
             <h2>How to Get Here</h2>
             <div class="direction-box">
-                <strong>From Route 100:</strong> Take exit 1A toward Ellicott City. Turn left at the third light onto the main entrance. Look for the bright balloons!
+                <strong>From Old Ellicott City (3 mins):</strong> Turn onto Mulligans Hill Lane, turn right on St Paul Street, and follow the curve to the left where it turns into College Avenue. Follow College Avenue until you see signs.
             </div>
             <div class="direction-box">
-                <strong>From Route 29:</strong> Head North and exit at Montgomery Rd. Follow signs for 2 miles until you reach the Taylor Village gates.
+                <strong>From Montgomery Road (2 mins):</strong> Turn onto New Cut Road, then turn right on Hillsborough Road. Follow Hillsborough Road until you see signs for the community yard sale.
             </div>
         </div>
 
         <div class="card">
             <h2>Participating Homes</h2>
-            <div class="address-item">
-                <strong>123 High Castle Road</strong>
-                Baby gear, Montessori-inspired toys, and high-end home decor.
-            </div>
-            <div class="address-item">
-                <strong>456 Taylor Lane</strong>
-                Power tools, sporting equipment, and kitchen appliances.
-            </div>
-            <div class="address-item">
-                <strong>789 Village Drive</strong>
-                Furniture, vintage clothing, and gardening supplies.
+            <div class="address-grid">
+                <div class="address-item">8211 Academy Road</div>
+                <div class="address-item">8374 Academy Road</div>
+                <div class="address-item">4911 Autumn Crest Way</div>
+                <div class="address-item">Broadgate Circle Culdesac</div>
+                <div class="address-item">8103 Calla Lilly Drive</div>
+                <div class="address-item">8129 Calla Lilly Drive</div>
+                <div class="address-item">4330 English Morning Lane</div>
+                <div class="address-item">8018 Four Quarter Road</div>
+                <div class="address-item">8049 Four Quarter Road</div>
+                <div class="address-item">8009 High Castle Road</div>
+                <div class="address-item">4100 Lotus Circle</div>
+                <div class="address-item">4145 Lotus Circle</div>
+                <div class="address-item">4175 Lotus Circle</div>
+                <div class="address-item">4304 Pleasant Path</div>
+                <div class="address-item">4235 Rose Petal Court</div>
+                <div class="address-item">4250 Rose Petal Court</div>
             </div>
         </div>
 
         <div class="card">
             <h2>Tips for Shoppers</h2>
             <ul>
-                <li>Please park on one side of the street only.</li>
-                <li>Cash is preferred, but many homes accept Venmo.</li>
-                <li>Everything must go by 2:00 PM!</li>
+                <li>Cash is preferred, but some homes may accept Venmo/CashApp/Zelle.</li>
+                <li><strong>Be mindful of driving and parking; we are expecting a large turnout.</strong></li>
             </ul>
         </div>
 
     </div>
 
     <footer>
-        &copy; 2026 Taylor Village Community Association
+        Taylor Village Community Yard Sale • 2026
     </footer>
 
 </body>
