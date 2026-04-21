@@ -32,11 +32,11 @@
         .hero h1 { margin: 0; font-size: 2rem; }
         .hero p { font-size: 1.2rem; margin: 10px 0; font-weight: bold; }
 
-        /* Updated Button: Dark Blue text on Yellow background */
+        /* Main Nav Button */
         .cta-button {
             display: inline-block;
             background-color: var(--accent-yellow);
-            color: #000000;
+            color: var(--primary-blue);
             padding: 18px 30px;
             text-decoration: none;
             border-radius: 50px;
@@ -45,6 +45,20 @@
             margin-top: 15px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             text-transform: uppercase;
+            width: 80%;
+            max-width: 300px;
+        }
+
+        /* NEW Registration Button */
+        .reg-button {
+            display: inline-block;
+            background-color: transparent;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: underline;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 15px;
         }
 
         .container {
@@ -84,7 +98,16 @@
             font-weight: 500;
         }
 
-        footer { text-align: center; padding: 30px; font-size: 0.9rem; color: #666; }
+        footer { 
+            text-align: center; 
+            padding: 40px 20px; 
+            font-size: 1rem; 
+            color: #444; 
+            background: #eee;
+        }
+
+        footer a { color: var(--primary-blue); font-weight: bold; text-decoration: none; }
+        .footer-line { margin-bottom: 10px; }
     </style>
 </head>
 <body>
@@ -93,7 +116,10 @@
         <h1>HUGE Community Yard Sale</h1>
         <p>Taylor Village | Ellicott City, MD</p>
         <p>Saturday, May 2nd • 8AM - 2PM</p>
-        <a href="https://www.google.com/maps/search/?api=1&query=8270+Academy+Road+Ellicott+City+MD+21043" class="cta-button">📍 Start Navigating Here</a>
+        
+        <a href="https://www.google.com/maps/search/?api=1&query=8270+Academy+Road+Ellicott+City+MD" class="cta-button">📍 Start Navigating</a>
+        <br>
+        <a href="https://forms.gle/DB52taH31219MR5k6" class="reg-button">Selling? Click here to register your house</a>
     </section>
 
     <div class="container">
@@ -101,7 +127,7 @@
         <div class="card">
             <h2>How to Get Here</h2>
             <div class="direction-box">
-                <strong>From Old Ellicott City (3 mins):</strong> Turn onto Mulligans Hill Lane, turn right on St Paul Street, and follow the curve to the left where it turns into College Avenue. Follow College Avenue until you see signs for the community yard sale.
+                <strong>From Old Ellicott City (3 mins):</strong> Turn onto Mulligans Hill Lane, turn right on St Paul Street, and follow the curve to the left where it turns into College Avenue. Follow College Avenue until you see signs.
             </div>
             <div class="direction-box">
                 <strong>From Montgomery Road (2 mins):</strong> Turn onto New Cut Road, then turn right on Hillsborough Road. Follow Hillsborough Road until you see signs for the community yard sale.
@@ -141,7 +167,15 @@
     </div>
 
     <footer>
-        Taylor Village Community Yard Sale • 2026
+        <div class="footer-line">
+            Follow us on Instagram: <a href="https://instagram.com/tvys.ec" target="_blank">@tvys.ec</a>
+        </div>
+        <div class="footer-line">
+            Any questions? Email: <a href="mailto:taylorvillageyardsale@gmail.com">taylorvillageyardsale@gmail.com</a>
+        </div>
+        <div style="margin-top:20px; font-size: 0.8rem; opacity: 0.7;">
+            Taylor Village Community Yard Sale • 2026
+        </div>
     </footer>
 
 </body>
