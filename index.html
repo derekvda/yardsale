@@ -34,7 +34,7 @@
         .hero h1 { margin: 0; font-size: 1.8rem; }
         .hero p { font-size: 1.1rem; margin: 10px 0; font-weight: bold; }
 
-        /* FORCED BLACK TEXT NAVIGATION BUTTON */
+        /* FORCED BLACK TEXT NAVIGATION BUTTON - ALL STATES */
         .cta-button, 
         .cta-button:visited, 
         .cta-button:active, 
@@ -56,7 +56,7 @@
             -webkit-appearance: none;
         }
 
-        .reg-link {
+        .reg-link, .reg-link:visited {
             display: inline-block;
             color: white !important;
             padding: 15px 20px;
@@ -91,11 +91,11 @@
             font-size: 0.95rem;
         }
 
-        /* LIVE API MAP STYLING */
+        /* LIVE MAP STYLING */
         .map-wrapper {
             position: relative;
             width: 100%;
-            height: 400px;
+            height: 450px;
             border-radius: 8px;
             overflow: hidden;
             border: 1px solid #ddd;
@@ -151,26 +151,20 @@
         <div class="card">
             <h2>How to Get Here</h2>
             <div class="direction-box">
-                <strong>From Old Ellicott City (3 mins):</strong> Turn onto Mulligans Hill Lane, right on St Paul Street, and follow the curve onto College Avenue until you see signs.
+                <strong>From Old Ellicott City (3 mins):</strong> Turn onto Mulligans Hill Lane, right on St Paul Street, and follow the curve left onto College Avenue. Follow signs to the sale.
             </div>
             <div class="direction-box">
-                <strong>From Montgomery Road (2 mins):</strong> Turn onto New Cut Road, then right on Hillsborough Road. Follow until you see signs for the community yard sale.
+                <strong>From Montgomery Road (2 mins):</strong> Turn onto New Cut Road, then right on Hillsborough Road. Follow until you see yard sale signs.
             </div>
         </div>
 
         <div class="card">
-            <h2>Interactive Map</h2>
+            <h2>Interactive Sale Map</h2>
             <div class="map-wrapper">
-                <iframe 
-                    width="100%" 
-                    height="450" 
-                    frameborder="0" style="border:0"
-                    src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCJcww5xtl4Mua6HMO_wWrzhdzzAn5jvL0&q=8270+Academy+Road+Ellicott+City+MD" 
-                    allowfullscreen>
-                </iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LrlVc19xqMLEK3znlNqGz-V0zVY0Ths&ehbc=2E312F" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
-            <p style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 10px;">
-                <a href="https://www.google.com/maps/search/?api=1&query=Taylor+Village+Yard+Sale" target="_blank" style="color: var(--primary-blue); font-weight: bold;">🗺️ View Full List on Google Maps</a>
+            <p style="text-align: center; font-size: 0.9rem; color: #666; margin-top: 15px;">
+                <a href="https://maps.app.goo.gl/qwUhuTwxy8sobAAp7?g_st=ac" target="_blank" style="color: var(--primary-blue); font-weight: bold; text-decoration: underline;">🗺️ View Full List on Google Maps</a>
             </p>
         </div>
 
