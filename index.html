@@ -65,7 +65,16 @@
             font-size: 1.1rem;
             margin-top: 10px;
         }
-
+.map-img {
+    width: 100%;            /* Allows it to shrink on small phones */
+    max-width: 400px;       /* Prevents it from becoming a giant on larger screens */
+    height: auto;           /* Keeps the proportions perfect so it doesn't look squished */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 0 auto 15px auto; /* Centers the image and adds space below */
+}
+        
         .container {
             max-width: 600px;
             margin: auto;
